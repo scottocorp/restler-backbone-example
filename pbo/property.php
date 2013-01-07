@@ -163,46 +163,50 @@ class Property extends Base {
 	static function validBathrooms($in_bathrooms)
 	{
 		$in_bathrooms=trim($in_bathrooms);
-	    try {
-	    	$in_bathrooms=intval($in_bathrooms);
-        } catch (Exception $e) 
-        {
-        	return false;
-        }
-        return ($in_bathrooms > 0 and $in_bathrooms <= Property::BATHROOMS_MAX);
-			}
+		if (!is_numeric($in_bathrooms))
+		{
+			return false;
+		}
+		else
+		{
+        	return ($in_bathrooms > 0 and $in_bathrooms <= Property::BATHROOMS_MAX);
+		}
+	}
 	static function validBedrooms($in_bedrooms)
 	{
 		$in_bedrooms=trim($in_bedrooms);
-	    try {
-	    	$in_bedrooms=intval($in_bedrooms);
-        } catch (Exception $e) 
-        {
-        	return false;
-        }
-        return ($in_bedrooms > 0 and $in_bedrooms <= Property::BEDROOMS_MAX);
+		if (!is_numeric($in_bedrooms))
+		{
+			return false;
+		}
+		else
+		{
+			return ($in_bedrooms > 0 and $in_bedrooms <= Property::BEDROOMS_MAX);
+		}
 	}
 	static function validRent($in_rent)
 	{
 		$in_rent=trim($in_rent);
-	    try {
-	    	$in_rent=intval($in_rent);
-        } catch (Exception $e) 
-        {
-        	return false;
-        }
-        return ($in_rent > 0 and $in_rent <= Property::RENT_MAX);
+		if (!is_numeric($in_rent))
+		{
+			return false;
+		}
+		else
+		{
+			return ($in_rent > 0 and $in_rent <= Property::RENT_MAX);
+		}
 	}
 	static function validCarSpaces($in_car_spaces)
 	{
 		$in_car_spaces=trim($in_car_spaces);
-	    try {
-	    	$in_car_spaces=intval($in_car_spaces);
-        } catch (Exception $e) 
-        {
-        	return false;
-        }
-        return ($in_car_spaces > 0 and $in_car_spaces <= Property::CAR_SPACES_MAX);
+		if (!is_numeric($in_car_spaces))
+		{
+			return false;
+		}
+		else
+		{
+			return ($in_car_spaces > 0 and $in_car_spaces <= Property::CAR_SPACES_MAX);
+		}
 	}
 	static function validAddress($in_address)
 	{
