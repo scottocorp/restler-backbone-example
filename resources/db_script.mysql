@@ -1,0 +1,16 @@
+CREATE DATABASE exampleDB
+  DEFAULT CHARACTER SET utf8
+  DEFAULT COLLATE utf8_general_ci;
+
+GRANT CREATE, DROP, SELECT, UPDATE, INSERT, DELETE
+  ON exampleDB.*
+  TO 'exampleDB_admin_user'@'localhost'
+  IDENTIFIED BY 'exampleDB_admin_user_pw';
+
+GRANT SELECT, UPDATE, INSERT, DELETE
+  ON exampleDB.*
+  TO 'exampleDB_regular_user'@'localhost'
+  IDENTIFIED BY 'exampleDB_regular_user_pw';
+
+USE exampleDB;
+SET NAMES 'utf8';

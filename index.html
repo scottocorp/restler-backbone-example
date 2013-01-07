@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Property Management</title>   
+    <link rel="stylesheet" href="css/app.css"/> 
+  </head>
+  <body role="application">
+  
+    <div aria-live="polite" id="notice">
+    </div>
+ 
+    <div aria-live="polite" id=property>
+    </div>
+
+	<div class="list-header">
+	  	<div class="property-field id">Id</div> 
+		<div class="property-field address">Address</div> 
+		<div class="property-field property_type">Property type</div> 
+		<div class="property-field bedrooms">Bedrooms</div>
+		<div class="property-field bathrooms">Bathrooms</div>
+		<div class="property-field car_spaces">Car</div>
+		<div class="property-field rent">Rent</div>
+ 	</div>
+    
+    <ul aria-live="polite" id="property-list">
+    </ul>
+    
+    <script type="text/html" id="property-list-item-template">
+      
+		<div class="view">
+	        
+    		<div class="property-field id">{{id}}</div> 
+			<div class="property-field address">{{address}}</div> 
+			<div class="property-field property_type">{{property_type}}</div> 
+			<div class="property-field bedrooms">{{bedrooms}} </div>
+			<div class="property-field bathrooms">{{bathrooms}} </div>
+			<div class="property-field car_spaces">{{car_spaces}} </div>
+			<div class="property-field rent">{{rent}} </div>
+
+			<button id="property-edit">Edit</button>
+          	<button id="property-delete">Delete</button>
+        	
+		</div>
+
+		<div class="edit">
+			<div class="property-field id">{{id}}</div> 
+			<input id="property-list-item-address" type="text" value="{{address}}" class="property-field address" />
+			<input id="property-list-item-property-type" type="text" value="{{property_type}}" class="property-field property_type" />
+			<input id="property-list-item-bedrooms" type="text" value="{{bedrooms}}" class="property-field bedrooms" />
+			<input id="property-list-item-bathrooms" type="text" value="{{bathrooms}}" class="property-field bathrooms" />
+			<input id="property-list-item-car-spaces" type="text" value="{{car_spaces}}" class="property-field car_spaces" />
+			<input id="property-list-item-rent" type="text" value="{{rent}}" class="property-field rent" />
+
+			<button id="property-update">Update</button>			
+			<button id="property-edit-cancel">Cancel</button>			
+		</div>
+      
+    </script>
+    
+    <script type="text/html" id="property-template">
+      		
+		<div class="view">
+			<button id="property-add">Add a property</button>
+		</div>
+
+		<div class="edit">
+
+			<div class="list-header">
+			  	<div class="property-field id">Id</div> 
+				<div class="property-field address">Address</div> 
+				<div class="property-field property_type">Property type</div> 
+				<div class="property-field bedrooms">Bedrooms</div>
+				<div class="property-field bathrooms">Bathrooms</div>
+				<div class="property-field car_spaces">Car</div>
+				<div class="property-field rent">Rent</div>
+ 			</div>
+   
+			<div class="property-field id">{{id}}</div>
+	        <input id="property-address" type="text" value="{{address}}" class="property-field address" />
+			<input id="property-property-type" type="text" value="{{property_type}}" class="property-field property_type" />
+			<input id="property-bedrooms" type="text" value="{{bedrooms}}" class="property-field bedrooms" />
+			<input id="property-bathrooms" type="text" value="{{bathrooms}}" class="property-field bathrooms" />
+			<input id="property-car-spaces" type="text" value="{{car_spaces}}" class="property-field car_spaces" />
+			<input id="property-rent" type="text" value="{{rent}}" class="property-field rent" />
+
+	        <button id="property-save">Save</button>    
+	      	<button id="property-add-cancel">Cancel</button>
+		</div>
+		
+    </script>
+    
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>      window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <script type="text/javascript" 
+            src="js/lib/json2.js"></script>
+    <script type="text/javascript" 
+            src="js/lib/underscore.min.js"></script>
+    <script type="text/javascript" 
+            src="js/lib/backbone-min.js"></script>
+    <script type="text/javascript" 
+            src="js/lib/mustache.js"></script>
+    <script type="text/javascript" 
+            src="js/app.js"></script>
+    
+    
+  </body>
+</html>

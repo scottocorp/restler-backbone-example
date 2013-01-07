@@ -1,0 +1,79 @@
+
+ul#property-list {
+	margin: 10px 0;
+	padding: 0;
+	list-style: none;
+}
+ul#property-list li{
+	height:35px;
+}
+
+ul#property-list li .view {
+	color: #999;
+}
+
+ul#property-list li.editing .edit {
+	display: block;
+	margin: 0;
+}
+
+ul#property-list li.editing .view {
+	display: none;
+}
+
+ul#property-list li .edit {
+	display: none;
+}
+
+
+#property {
+	margin:30px 0;
+}
+
+#property.editing .edit {
+	display: block;
+	margin: 0;
+}
+
+#property.editing .view {
+	display: none;
+}
+
+#property .edit {
+	display: none;
+}
+
+
+.list-header{height:30px;margin-top:20px;}
+
+.property-field{float:left;min-height:20px;white-space: nowrap; overflow: hidden;}
+
+.id{width:30px;}
+.address{width:300px;}
+.property_type{width:100px;}
+.bedrooms{width:80px;}
+.bathrooms{width:80px;}
+.car_spaces{width:50px;}
+.rent{width:50px;}
+
+.edit .id{width:30px;}
+.edit .address{width:292px;margin-right:2px;}
+.edit .property_type{width:92px;margin-right:2px;}
+.edit .bedrooms{width:72px;margin-right:2px;}
+.edit .bathrooms{width:72px;margin-right:2px;}
+.edit .car_spaces{width:42px;margin-right:2px;}
+.edit .rent{width:42px;margin-right:2px;}
+
+.list-header .id{width:27px;background-color:#eee;margin-right:3px;}
+.list-header .address{width:297px;background-color:#eee;margin-right:3px;}
+.list-header .property_type{width:97px;background-color:#eee;margin-right:3px;}
+.list-header .bedrooms{width:77px;background-color:#eee;margin-right:3px;}
+.list-header .bathrooms{width:77px;background-color:#eee;margin-right:3px;}
+.list-header .car_spaces{width:47px;background-color:#eee;margin-right:3px;}
+.list-header .rent{width:47px;background-color:#eee;margin-right:3px;}
+
+#notice
+{
+	color:Red;
+}
+

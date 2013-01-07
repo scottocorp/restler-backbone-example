@@ -1,0 +1,26 @@
+CREATE TABLE properties (id INTEGER AUTO_INCREMENT PRIMARY KEY, bathrooms VARCHAR(1), bedrooms VARCHAR(1), rent VARCHAR(4), car_spaces VARCHAR(1), address VARCHAR(200), property_type VARCHAR(20))ENGINE=InnoDB;
+
+INSERT INTO properties (bathrooms, bedrooms, rent, address, property_type, car_spaces) VALUES
+('1','1','600','298-304 Sussex Street Sydney NSW 2000','Unit','1'); 
+
+INSERT INTO properties (bathrooms, bedrooms, rent, address, property_type, car_spaces) VALUES
+('1','2','780','195 Denison Street Bondi Junction NSW 2022','Terrace','1'); 
+
+INSERT INTO properties (bathrooms, bedrooms, rent, address, property_type, car_spaces) VALUES
+('1','2','360','47 Cronulla Street Carlton NSW 2218','House',NULL); 
+
+INSERT INTO properties (bathrooms, bedrooms, rent, address, property_type, car_spaces) VALUES
+('3','5','730','1 Bingara Crescent Bella Vista NSW 2153','House','2'); 
+
+INSERT INTO properties (bathrooms, bedrooms, rent, address, property_type, car_spaces) VALUES
+('1','3','750','19/19 Ithaca Road Elizabeth Bay NSW 2011','Apartment','1'); 
+
+INSERT INTO properties (bathrooms, bedrooms, rent, address, property_type, car_spaces) VALUES
+('1','3','490','1 James St Guildford West NSW 2161','House','1'); 
+
+INSERT INTO properties (bathrooms, bedrooms, rent, address, property_type, car_spaces) VALUES
+('1','2','475','10/48 Willis Street Kingsford NSW 2032','Unit','1'); 
+
+INSERT INTO properties (bathrooms, bedrooms, rent, address, property_type, car_spaces) VALUES
+('1','2','250','4/16 NAGLE ST Liverpool NSW 2170','Unit','1'); 
+
