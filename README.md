@@ -22,6 +22,9 @@ Online demo:
 Don't get too excited, it's only a CRUD app ;) but the front-end is totally driven by AJAX and Backbone - no form posts are involved:   
 [A basic REST API with Restler and Backbone](http://bit.ly/UB486e)   
 
+REST URL:   
+[http://bit-taming.com/content/projects/restler-backbone-example/api/property](http://bit-taming.com/content/projects/restler-backbone-example/api/property)    
+
 Prerequisites:
 --------------
 * The development and test environment was Mac OSX (10.6.8), **A**pache, **M**ySQL (5.1.65) and **P**HP (5.3.15). See **useful resources** below for pointers on setting up an **AMP** development environment on Mac OSX.  
